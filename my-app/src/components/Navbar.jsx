@@ -31,22 +31,33 @@ const Navbar = () => {
         <li>Book</li>
       </ul>
       <div className="hidden md:flex">
-        <BiSearch size={20} className="cursor-pointer mr-3"/>
+        <BiSearch size={20} className="cursor-pointer mr-3" />
         <BsPerson size={20} className="cursor-pointer mr-3" />
       </div>
 
       {/* Hamburger */}
-      <div onClick={handleNav} className='md:hidden z-10'>
-        {nav ? <AiOutlineClose className='text-black' size={20} /> : <HiOutlineMenuAlt4 size={20} />}
+      <div onClick={handleNav} className="md:hidden z-10">
+        {nav ? (
+          <AiOutlineClose className="text-black" size={20} />
+        ) : (
+          <HiOutlineMenuAlt4 size={20} />
+        )}
       </div>
 
       {/* Mobile menu dropdown */}
-      <div onClick={handleNav} className={nav ? 'absolute text-black font-bold left-0 top-0 w-full bg-gray-100 px-4 py-7 flex flex-col' : 'absolute left-[-100%]'}>
+      <div
+        onClick={handleNav}
+        className={
+          nav
+            ? "absolute text-black font-bold left-0 top-0 w-full bg-gray-100 px-4 py-7 flex flex-col"
+            : "absolute left-[-100%]"
+        }
+      >
         <ul>
           <li className="border-b mt-10">Home</li>
           <li className="border-b">Destinations</li>
           <li className="border-b">Travel</li>
-           <li className="border-b">Book</li>
+          <li className="border-b">Book</li>
           <div className="flex flex-col">
             <button className="my-6">Search</button>
             <button>Account</button>
