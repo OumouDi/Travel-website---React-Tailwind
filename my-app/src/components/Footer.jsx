@@ -21,8 +21,8 @@ const Footer = () => {
             <FaInstagram className="icon" />
           </div>
         </div>
-        <div className="flex justify-between">
-          <ul className="lg:flex  text-[#c2410c] font-bold">
+        <div className="flex flex-col sm:flex-row sm:justify-between">
+          <ul className="lg:flex text-[#c2410c] font-bold sm:justify-start">
             <li>About</li>
             <li>Careers</li>
             <li>Legal Information</li>
@@ -30,7 +30,7 @@ const Footer = () => {
             <li>Cookies</li>
             <li>Accessibility</li>
           </ul>
-          <ul className="text-right lg:flex font-bold">
+          <ul className="text-left lg:flex font-bold sm:justify-start sm:mt-4 lg:mt-0">
             <li>Home</li>
             <li>Destinations</li>
             <li>Travel</li>

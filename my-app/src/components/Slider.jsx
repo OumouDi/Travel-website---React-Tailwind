@@ -27,7 +27,7 @@ const Slider = () => {
         <div className={index === slide ? "opacity-100" : "opacity-0"}>
           {index === slide && (
             <img
-              className="rounded-md w-[1500px] h-[700px]"
+              className="w-full  md:h-[650px] md:w-[1200px] rounded-md"
               src={item.url}
               alt={`Illustration of ${item.name}`}
             />
