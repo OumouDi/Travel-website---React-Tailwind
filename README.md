@@ -10,11 +10,9 @@ To set up the project locally, follow these steps:
 1. Clone the repository :
 git clone git@github.com:OumouDi/Travel-website---React-Tailwind.git
 
-2. Navigate to the project directory :
-cd 
 
-3. Install dependencies :
+2. Install dependencies :
  `npm install`
 
-4. Run the project :
+3. Run the project :
 `npm start`
